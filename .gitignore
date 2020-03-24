@@ -1,0 +1,10 @@
+# Ignore all
+*
+.DS_Store
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+.idea

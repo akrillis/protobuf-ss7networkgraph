@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+package ss7networkgraph;
+
+message SS7PCRelation {
+    string OPC  = 1;
+    string DPC  = 2;
+    string Type = 3;
+}
+
+service Loader {
+    rpc ByPointCode (SS7PCRelation) returns (google.protobuf.Empty) {}
+}
